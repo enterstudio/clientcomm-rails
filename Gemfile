@@ -57,8 +57,8 @@ gem 'paperclip'
 group :test do
   gem 'launchy', require: false
   gem 'capybara-screenshot'
-  gem 'simplecov', require: false
-  gem 'codeclimate-test-reporter', require: false
+  gem 'simplecov', '>= 0.13.0', require: false
+  gem 'codeclimate-test-reporter', '>= 1.0.8', require: false
   gem 'shoulda-matchers', git: 'https://github.com/thoughtbot/shoulda-matchers.git', branch: 'rails-5'
 end
 
