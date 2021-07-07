@@ -55,8 +55,8 @@ gem 'sentry-raven'
 gem 'paperclip'
 
 group :test do
-  gem 'launchy', require: false
-  gem 'capybara-screenshot'
+  gem 'launchy', '>= 2.4.3', require: false
+  gem 'capybara-screenshot', '>= 1.0.14'
   gem 'simplecov', require: false
   gem 'codeclimate-test-reporter', require: false
   gem 'shoulda-matchers', git: 'https://github.com/thoughtbot/shoulda-matchers.git', branch: 'rails-5'
@@ -64,19 +64,19 @@ end
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'addressable'
+  gem 'addressable', '>= 2.8.0'
   gem 'byebug', platform: :mri
-  gem 'capybara'
+  gem 'capybara', '>= 2.14.4'
   gem 'database_cleaner'
   gem 'dotenv-rails'
   gem 'factory_girl_rails'
   gem 'faraday'
-  gem 'poltergeist'
+  gem 'poltergeist', '>= 1.15.0'
   gem 'pry-rails'
   gem 'rspec_junit_formatter'
   gem 'rspec-rails'
   gem 'selenium-webdriver'
-  gem 'webmock'
+  gem 'webmock', '>= 3.0.1'
   gem 'jasmine'
   gem 'awesome_print'
   gem 'faker'
