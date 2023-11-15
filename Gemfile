@@ -2,20 +2,20 @@ source 'https://rubygems.org'
 ruby File.read(File.join(File.dirname(__FILE__), '.ruby-version')).strip
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.1.0'
+gem 'rails', '~> 5.1.5'
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 0.18'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
 gem 'bootstrap-sass'
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails', '~> 5.0', '>= 5.0.7'
 gem 'bourbon', '~> 4.2.0'
 gem 'neat', '~> 1.8.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
-gem 'coffee-rails', '~> 4.2'
+gem 'coffee-rails', '~> 5.0', '>= 5.0.0'
 # Use Delayed Job for background tasks
 gem 'delayed_job_active_record'
 gem 'delayed_job_web'
@@ -25,7 +25,7 @@ gem 'mixpanel-ruby'
 gem 'device_detector'
 gem 'twilio-ruby'
 gem 'intercom-rails'
-gem 'devise'
+gem 'devise', '>= 4.4.0'
 gem 'aws-sdk'
 gem 'autosize'
 
@@ -33,7 +33,7 @@ gem 'timeliness'
 gem 'validates_timeliness'
 
 # Use jquery as the JavaScript library
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.3.2'
 gem 'jquery-ui-rails'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
@@ -45,7 +45,7 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-gem 'activeadmin'
+gem 'activeadmin', '>= 1.2.0'
 
 # Metrics and performance tracking
 gem 'skylight'
@@ -56,7 +56,7 @@ gem 'paperclip'
 
 group :test do
   gem 'launchy', require: false
-  gem 'capybara-screenshot'
+  gem 'capybara-screenshot', '>= 1.0.15'
   gem 'simplecov', require: false
   gem 'codeclimate-test-reporter', require: false
   gem 'shoulda-matchers', git: 'https://github.com/thoughtbot/shoulda-matchers.git', branch: 'rails-5'
@@ -66,15 +66,15 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'addressable'
   gem 'byebug', platform: :mri
-  gem 'capybara'
+  gem 'capybara', '>= 2.15.0'
   gem 'database_cleaner'
-  gem 'dotenv-rails'
-  gem 'factory_girl_rails'
+  gem 'dotenv-rails', '>= 2.2.2'
+  gem 'factory_girl_rails', '>= 4.9.0'
   gem 'faraday'
-  gem 'poltergeist'
+  gem 'poltergeist', '>= 1.16.0'
   gem 'pry-rails'
   gem 'rspec_junit_formatter'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 3.6.1'
   gem 'selenium-webdriver'
   gem 'webmock'
   gem 'jasmine'
@@ -84,7 +84,7 @@ end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
-  gem 'web-console'
+  gem 'web-console', '>= 3.6.0'
   gem 'listen', '~> 3.0.5'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
