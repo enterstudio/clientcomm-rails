@@ -45,7 +45,7 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-gem 'activeadmin'
+gem 'activeadmin', '>= 2.12.0'
 
 # Metrics and performance tracking
 gem 'skylight'
