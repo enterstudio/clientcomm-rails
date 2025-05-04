@@ -74,7 +74,7 @@ group :development, :test do
   gem 'poltergeist'
   gem 'pry-rails'
   gem 'rspec_junit_formatter'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 8.0.0'
   gem 'selenium-webdriver'
   gem 'webmock'
   gem 'jasmine'
