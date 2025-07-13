@@ -2,30 +2,30 @@ source 'https://rubygems.org'
 ruby File.read(File.join(File.dirname(__FILE__), '.ruby-version')).strip
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.1.0'
+gem 'rails', '~> 7.1.0'
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 0.18'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
 gem 'bootstrap-sass'
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails', '~> 6.0', '>= 6.0.0'
 gem 'bourbon', '~> 4.2.0'
 gem 'neat', '~> 1.8.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
-gem 'coffee-rails', '~> 4.2'
+gem 'coffee-rails', '~> 5.0', '>= 5.0.0'
 # Use Delayed Job for background tasks
-gem 'delayed_job_active_record'
-gem 'delayed_job_web'
+gem 'delayed_job_active_record', '>= 4.1.5'
+gem 'delayed_job_web', '>= 1.4.2'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 gem 'mixpanel-ruby'
 gem 'device_detector'
 gem 'twilio-ruby'
-gem 'intercom-rails'
-gem 'devise'
+gem 'intercom-rails', '>= 0.3.8'
+gem 'devise', '>= 4.7.0'
 gem 'aws-sdk'
 gem 'autosize'
 
@@ -33,10 +33,10 @@ gem 'timeliness'
 gem 'validates_timeliness'
 
 # Use jquery as the JavaScript library
-gem 'jquery-rails'
-gem 'jquery-ui-rails'
+gem 'jquery-rails', '>= 4.3.2'
+gem 'jquery-ui-rails', '>= 7.0.0'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 2.5'
+gem 'jbuilder', '~> 2.8', '>= 2.8.0'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
@@ -45,20 +45,20 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-gem 'activeadmin'
+gem 'activeadmin', '>= 3.1.0'
 
 # Metrics and performance tracking
 gem 'skylight'
 gem 'sentry-raven'
 
 # Attached media files
-gem 'paperclip'
+gem 'paperclip', '>= 5.2.0'
 
 group :test do
   gem 'launchy', require: false
-  gem 'capybara-screenshot'
+  gem 'capybara-screenshot', '>= 1.0.15'
   gem 'simplecov', require: false
-  gem 'codeclimate-test-reporter', require: false
+  gem 'codeclimate-test-reporter', '>= 1.0.9', require: false
   gem 'shoulda-matchers', git: 'https://github.com/thoughtbot/shoulda-matchers.git', branch: 'rails-5'
 end
 
@@ -66,29 +66,29 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'addressable'
   gem 'byebug', platform: :mri
-  gem 'capybara'
+  gem 'capybara', '>= 2.15.0'
   gem 'database_cleaner'
-  gem 'dotenv-rails'
-  gem 'factory_girl_rails'
+  gem 'dotenv-rails', '>= 2.7.6'
+  gem 'factory_girl_rails', '>= 4.9.0'
   gem 'faraday'
-  gem 'poltergeist'
+  gem 'poltergeist', '>= 1.16.0'
   gem 'pry-rails'
   gem 'rspec_junit_formatter'
-  gem 'rspec-rails'
-  gem 'selenium-webdriver'
+  gem 'rspec-rails', '>= 3.6.1'
+  gem 'selenium-webdriver', '>= 3.4.4'
   gem 'webmock'
-  gem 'jasmine'
+  gem 'jasmine', '>= 2.7.0'
   gem 'awesome_print'
   gem 'faker'
 end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
-  gem 'web-console'
-  gem 'listen', '~> 3.0.5'
+  gem 'web-console', '>= 3.6.0'
+  gem 'listen', '~> 3.1.0'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
-  gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'spring-watcher-listen', '~> 2.1.0'
   gem 'spring-commands-rspec'
 end
 
