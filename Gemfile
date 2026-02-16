@@ -23,7 +23,7 @@ gem 'delayed_job_web'
 # gem 'therubyracer', platforms: :ruby
 gem 'mixpanel-ruby'
 gem 'device_detector'
-gem 'twilio-ruby'
+gem 'twilio-ruby', '>= 5.67.0'
 gem 'intercom-rails'
 gem 'devise'
 gem 'aws-sdk'
@@ -49,7 +49,7 @@ gem 'activeadmin'
 
 # Metrics and performance tracking
 gem 'skylight'
-gem 'sentry-raven'
+gem 'sentry-raven', '>= 3.0.0'
 
 # Attached media files
 gem 'paperclip'
@@ -70,7 +70,7 @@ group :development, :test do
   gem 'database_cleaner'
   gem 'dotenv-rails'
   gem 'factory_girl_rails'
-  gem 'faraday'
+  gem 'faraday', '>= 2.14.1'
   gem 'poltergeist'
   gem 'pry-rails'
   gem 'rspec_junit_formatter'
